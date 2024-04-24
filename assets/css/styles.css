@@ -394,6 +394,19 @@ a {
 .brands {
   padding-bottom: 5rem !important;
 }
+
+.brands .swiper-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.brands .brand__image img {
+  max-width: 120px;
+  background-size: cover;
+  background-position: bottom bottom;
+}
+
 /* End Brands */
 
 /* Start Banner */

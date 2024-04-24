@@ -36,10 +36,10 @@ var swiper = new Swiper(".swiper", {
   loop: true,
   centerSlide: "true",
   grabCursor: "true",
-  autoplay: {
-    delay: 1500,
-    disableOnInteraction: false,
-  },
+  // autoplay: {
+  //   delay: 1500,
+  //   disableOnInteraction: false,
+  // },
   pagination: {
     el: ".swiper-pagination7",
     clickable: true,
@@ -82,10 +82,10 @@ var swiper = new Swiper(".swiper1", {
   loop: true,
   centerSlide: "true",
   grabCursor: "true",
-  autoplay: {
-    delay: 2000,
-    disableOnInteraction: false,
-  },
+  // autoplay: {
+  //   delay: 2000,
+  //   disableOnInteraction: false,
+  // },
   pagination: {
     el: ".swiper-pagination7",
     clickable: true,
@@ -127,10 +127,10 @@ var swiper2 = new Swiper(".swiper2", {
   loop: true,
   centerSlide: "true",
   grabCursor: "true",
-  autoplay: {
-    delay: 2000,
-    disableOnInteraction: false,
-  },
+  // autoplay: {
+  //   delay: 2000,
+  //   disableOnInteraction: false,
+  // },
   pagination: {
     el: ".swiper-pagination7",
     clickable: true,
