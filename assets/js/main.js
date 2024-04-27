@@ -16,19 +16,6 @@ showMenu("nav-toggle", "nav-menu");
 
 // Show Video
 
-function loadVideo() {
-  myMovie = document.getElementById("myMovie");
-  myMovie.addEventListener("click", playOrPause, false);
-}
-function playOrPause() {
-  if (!myMovie.paused && !myMovie.ended) {
-    myMovie.pause();
-  } else {
-    myMovie.play();
-  }
-}
-window.addEventListener("load", loadVideo, false);
-
 var swiper = new Swiper(".swiper", {
   slidesPerView: 6,
   spaceBetween: 20,
@@ -36,18 +23,9 @@ var swiper = new Swiper(".swiper", {
   loop: true,
   centerSlide: "true",
   grabCursor: "true",
-  // autoplay: {
-  //   delay: 1500,
-  //   disableOnInteraction: false,
-  // },
-  pagination: {
-    el: ".swiper-pagination7",
-    clickable: true,
-    dynamicBullets: true,
-  },
-  navigation: {
-    nextEl: ".swiper-navBtn",
-    prevEl: ".swiper-navBtn",
+  autoplay: {
+    delay: 1500,
+    disableOnInteraction: false,
   },
 
   breakpoints: {
@@ -55,10 +33,47 @@ var swiper = new Swiper(".swiper", {
       slidesPerView: 1,
     },
     350: {
-      slidesPerView: 2,
+      slidesPerView: 1,
     },
     520: {
-      slidesPerView: 2.5,
+      slidesPerView: 2,
+    },
+    768: {
+      slidesPerView: 3,
+    },
+    1000: {
+      slidesPerView: 4,
+    },
+    1200: {
+      slidesPerView: 5,
+    },
+    1300: {
+      slidesPerView: 6,
+    },
+  },
+});
+
+var swiper = new Swiper(".swiperBrands", {
+  slidesPerView: 6,
+  spaceBetween: 20,
+  sliderPerGroup: 6,
+  loop: true,
+  centerSlide: "true",
+  grabCursor: "true",
+  autoplay: {
+    delay: 1500,
+    disableOnInteraction: false,
+  },
+
+  breakpoints: {
+    0: {
+      slidesPerView: 1,
+    },
+    350: {
+      slidesPerView: 3,
+    },
+    520: {
+      slidesPerView: 3,
     },
     768: {
       slidesPerView: 4,
@@ -82,18 +97,9 @@ var swiper = new Swiper(".swiper1", {
   loop: true,
   centerSlide: "true",
   grabCursor: "true",
-  // autoplay: {
-  //   delay: 2000,
-  //   disableOnInteraction: false,
-  // },
-  pagination: {
-    el: ".swiper-pagination7",
-    clickable: true,
-    dynamicBullets: true,
-  },
-  navigation: {
-    nextEl: ".swiper-navBtn",
-    prevEl: ".swiper-navBtn",
+  autoplay: {
+    delay: 2000,
+    disableOnInteraction: false,
   },
 
   breakpoints: {
@@ -104,7 +110,7 @@ var swiper = new Swiper(".swiper1", {
       slidesPerView: 1,
     },
     520: {
-      slidesPerView: 1,
+      slidesPerView: 2,
     },
     768: {
       slidesPerView: 2,
@@ -122,15 +128,15 @@ var swiper = new Swiper(".swiper1", {
 });
 var swiper2 = new Swiper(".swiper2", {
   slidesPerView: 6,
-  spaceBetween: 50,
+  spaceBetween: 30,
   sliderPerGroup: 6,
   loop: true,
   centerSlide: "true",
   grabCursor: "true",
-  // autoplay: {
-  //   delay: 2000,
-  //   disableOnInteraction: false,
-  // },
+  autoplay: {
+    delay: 2000,
+    disableOnInteraction: false,
+  },
   pagination: {
     el: ".swiper-pagination7",
     clickable: true,
@@ -146,10 +152,10 @@ var swiper2 = new Swiper(".swiper2", {
       slidesPerView: 1,
     },
     350: {
-      slidesPerView: 1,
+      slidesPerView: 2,
     },
     520: {
-      slidesPerView: 1,
+      slidesPerView: 2,
     },
     768: {
       slidesPerView: 2,

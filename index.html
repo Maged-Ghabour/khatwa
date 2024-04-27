@@ -32,6 +32,9 @@
       rel="stylesheet"
     />
 
+    <!-- Aos Library -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
     <link rel="stylesheet" href="assets/css/swiper-bundle.min.css" />
     <!-- =============== Bootstrap =============== -->
     <link
@@ -77,17 +80,16 @@
           <!--=============== NAV MENU ===============-->
           <div class="nav__menu" id="nav-menu">
             <ul class="nav__list">
-              <li><a href="#" class="nav__link">الرئيسية</a></li>
-              <li><a href="#footer_aboutus" class="nav__link">من نحن</a></li>
+              <li><a href="#about__us" class="nav__link">من نحن</a></li>
 
-              <li><a href="#features" class="nav__link">خدماتنا</a></li>
+              <li><a href="#services" class="nav__link">خدماتنا</a></li>
 
-              <li><a href="#stores" class="nav__link">تواصل معنا</a></li>
+              <li><a href="#contact__us" class="nav__link">تواصل معنا</a></li>
             </ul>
           </div>
 
           <div class="nav__contact_us">
-            <a href="https://wa.me/966562484827" class="btn-contact__us">
+            <a href="https://wa.me/966565046134" class="btn-contact__us">
               أنشىء متجرك الان</a
             >
           </div>
@@ -99,35 +101,46 @@
           class="row landing__content__wrapper justify-content-center align-items-center"
         >
           <div class="col">
-            <div class="landing__content">
+            <div
+              class="landing__content"
+              data-aos="fade-left"
+              data-aos-offset="200"
+              data-aos-delay="100"
+              data-aos-duration="1000"
+            >
               <p>
                 <span class="text-orange">خطوة</span> واحدة <br />
                 قد تغير
                 <span class="text-orange">مسارك</span>
               </p>
               <div class="nav__contact_us">
-                <a href="https://wa.me/966562484827" class="btn-contact__us">
+                <a href="https://wa.me/966565046134" class="btn-contact__us">
                   أنشىء متجرك الان</a
                 >
               </div>
             </div>
           </div>
-          <div class="col">
-            <div class="langing__image">
-              <img
-                class="img-fluid"
-                src="./assets/images/landingImage.png"
-                alt=""
-              />
-            </div>
+
+          <div
+            class="col langing__image"
+            data-aos="fade-right"
+            data-aos-offset="200"
+            data-aos-delay="100"
+            data-aos-duration="1000"
+          >
+            <img
+              class="img-fluid"
+              src="./assets/images/landingImage.png"
+              alt=""
+            />
           </div>
         </div>
       </div>
 
       <!-- Start Brands Section -->
-      <div class="brands py-4" data-aos="fade-up" id="stores">
+      <div class="brands pb-5" data-aos="fade-up" id="stores">
         <div class="swiper p-3 m-2">
-          <div class="slide-container swiper content text-center">
+          <div class="slide-container swiperBrands content text-center">
             <div class="rounded swiper-wrapper">
               <a href="#" class="swiper-slide">
                 <div class="brand__image rounded">
@@ -183,7 +196,7 @@
     </div>
 
     <section class="banner">
-      <div class="container">
+      <div class="container" data-aos="zoom-in">
         <a href="">
           <img class="img-fluid" src="./assets/images/paidBanner.png" alt="" />
         </a>
@@ -191,8 +204,8 @@
     </section>
 
     <!-- Start About us  -->
-    <section class="about-us__section">
-      <div class="container">
+    <section id="about__us" class="about-us__section">
+      <div class="container" data-aos="zoom-in">
         <h3>شركة خطوة الرقميةواحدة من كبري الشركات السعودية</h3>
         <p>
           شركة خطوة الرقمية واحدة من كبرى الشركات السعودية المتخصصة في إنشاءات
@@ -202,7 +215,7 @@
         </p>
 
         <div class="contact_us d-flex justify-content-center mt-3">
-          <a href="https://wa.me/966562484827" class="btn-contact__us">
+          <a href="https://wa.me/966565046134" class="btn-contact__us">
             أنشىء متجرك الان</a
           >
         </div>
@@ -212,7 +225,7 @@
 
     <!-- Start Prices Section  -->
 
-    <section class="prices__section">
+    <section id="services" class="prices__section">
       <h3
         class="text-center d-flex justify-content-center align-items-center fw-semibold mb-3"
       >
@@ -220,7 +233,12 @@
       </h3>
       <div class="container">
         <div class="row row-cols-1 row-cols-md-4 g-4">
-          <div class="col price__card">
+          <div
+            class="col price__card"
+            data-aos="fade-right"
+            data-aos-offset="300"
+            data-aos-easing="ease-in-sine"
+          >
             <div class="card h-100">
               <img
                 src="./assets/images/priceImage1.png"
@@ -245,7 +263,7 @@
                   <li>مدة التنفيذ تتراوح بين 7- 10 أيام</li>
                 </ul>
                 <div class="contact_us d-flex justify-content-center mt-3">
-                  <a href="https://wa.me/966562484827" class="btn-contact__us">
+                  <a href="https://wa.me/966565046134" class="btn-contact__us">
                     أنشىء متجرك الان</a
                   >
                 </div>
@@ -277,7 +295,7 @@
                   <li>مدة التنفيذ تتراوح بين 7- 10 أيام</li>
                 </ul>
                 <div class="contact_us d-flex justify-content-center mt-3">
-                  <a href="https://wa.me/966562484827" class="btn-contact__us">
+                  <a href="https://wa.me/966565046134" class="btn-contact__us">
                     أنشىء متجرك الان</a
                   >
                 </div>
@@ -309,14 +327,19 @@
                   <li>مدة التنفيذ تتراوح بين 10- 20 يوم عمل</li>
                 </ul>
                 <div class="contact_us d-flex justify-content-center mt-3">
-                  <a href="https://wa.me/966562484827" class="btn-contact__us">
+                  <a href="https://wa.me/966565046134" class="btn-contact__us">
                     أنشىء متجرك الان</a
                   >
                 </div>
               </div>
             </div>
           </div>
-          <div class="col price__card">
+          <div
+            class="col price__card"
+            data-aos="fade-left"
+            data-aos-offset="300"
+            data-aos-easing="ease-in-sine"
+          >
             <div class="card h-100">
               <img
                 src="./assets/images/priceImage4.png"
@@ -325,15 +348,23 @@
               />
               <div class="card-body">
                 <ul class="card-text">
-                  <li>اشتراك في استضافة لمدة عام</li>
-                  <li>اشتراك في استضافة لمدة عام</li>
-                  <li>اشتراك في استضافة لمدة عام</li>
-                  <li>اشتراك في استضافة لمدة عام</li>
-                  <li>اشتراك في استضافة لمدة عام</li>
-                  <li>اشتراك في استضافة لمدة عام</li>
+                  <li>تصميم هوية تجارية</li>
+                  <li>حجز دومين فريد بالموقع</li>
+                  <li>ربط الموقع بوابات الدفع و شركات الشحن</li>
+                  <li>تصميم 5 بنرات للمتجر</li>
+                  <li>الربط مع حسابات التواصل الاجتماعي</li>
+                  <li>ربط الموقع مع منصة Drop Shipping</li>
+                  <li>دعم شهر مجاني للمتجر</li>
+                  <li>
+                    انشاء صفحات (سياسة الاسترجاع - من نحن - الخصوصية وغيرها)
+                  </li>
+                  <li>مدة العمل 7 أيام بعد اعتماد التصميم</li>
+                  <li>اضافة 100 منتج على الموقع</li>
+                  <li>تهيئة صفحات السوشيال ميديا مزودة ب 9 تصميمات احترافية</li>
+                  <li>مدة التنفيذ تتراوح بين 7- 10 أيام</li>
                 </ul>
                 <div class="contact_us d-flex justify-content-center mt-3">
-                  <a href="https://wa.me/966562484827" class="btn-contact__us">
+                  <a href="https://wa.me/966565046134" class="btn-contact__us">
                     أنشىء متجرك الان</a
                   >
                 </div>
@@ -405,69 +436,8 @@
                 <div class="teacher__image rounded">
                   <img
                     class="img-fluid"
-                    src="assets/images/سوق الأجهزة.png"
+                    src="assets/images/أعمالنا/1.jpg"
                     alt=""
-                    loading="lazy"
-                  />
-                </div>
-              </a>
-
-              <a href="#" class="swiper-slide">
-                <div class="teacher__image rounded">
-                  <img class="img-fluid" src="assets/images/qTec.png" alt="" />
-                </div>
-              </a>
-              <a href="#" class="swiper-slide">
-                <div class="teacher__image rounded">
-                  <img
-                    class="img-fluid"
-                    src="assets/images/أوراقي.png"
-                    alt=""
-                    loading="lazy"
-                  />
-                </div>
-              </a>
-
-              <a href="#" class="swiper-slide">
-                <div class="teacher__image rounded">
-                  <img
-                    class="img-fluid"
-                    src="assets/images/الهنوف.png"
-                    alt=""
-                    loading="lazy"
-                  />
-                </div>
-              </a>
-
-              <a href="#" class="swiper-slide">
-                <div class="teacher__image rounded">
-                  <img
-                    class="img-fluid"
-                    src="assets/images/ساعات.png"
-                    alt=""
-                    loading="lazy"
-                  />
-                </div>
-              </a>
-
-              <a href="#" class="swiper-slide">
-                <div class="teacher__image rounded">
-                  <img
-                    class="img-fluid"
-                    src="assets/images/سعودي.png"
-                    alt=""
-                    loading="lazy"
-                  />
-                </div>
-              </a>
-
-              <a href="#" class="swiper-slide">
-                <div class="teacher__image rounded">
-                  <img
-                    class="img-fluid"
-                    src="assets/images/website1.png"
-                    alt=""
-                    loading="lazy"
                   />
                 </div>
               </a>
@@ -475,9 +445,8 @@
                 <div class="teacher__image rounded">
                   <img
                     class="img-fluid"
-                    src="assets/images/website2.png"
+                    src="assets/images/أعمالنا/2.jpg"
                     alt=""
-                    loading="lazy"
                   />
                 </div>
               </a>
@@ -485,9 +454,8 @@
                 <div class="teacher__image rounded">
                   <img
                     class="img-fluid"
-                    src="assets/images/website3.png"
+                    src="assets/images/أعمالنا/3.jpg"
                     alt=""
-                    loading="lazy"
                   />
                 </div>
               </a>
@@ -495,9 +463,8 @@
                 <div class="teacher__image rounded">
                   <img
                     class="img-fluid"
-                    src="assets/images/website4.png"
+                    src="assets/images/أعمالنا/4.jpg"
                     alt=""
-                    loading="lazy"
                   />
                 </div>
               </a>
@@ -505,9 +472,125 @@
                 <div class="teacher__image rounded">
                   <img
                     class="img-fluid"
-                    src="assets/images/website5.png"
+                    src="assets/images/أعمالنا/5.jpg"
                     alt=""
-                    loading="lazy"
+                  />
+                </div>
+              </a>
+              <a href="#" class="swiper-slide">
+                <div class="teacher__image rounded">
+                  <img
+                    class="img-fluid"
+                    src="assets/images/أعمالنا/6.jpg"
+                    alt=""
+                  />
+                </div>
+              </a>
+              <a href="#" class="swiper-slide">
+                <div class="teacher__image rounded">
+                  <img
+                    class="img-fluid"
+                    src="assets/images/أعمالنا/7.jpg"
+                    alt=""
+                  />
+                </div>
+              </a>
+              <a href="#" class="swiper-slide">
+                <div class="teacher__image rounded">
+                  <img
+                    class="img-fluid"
+                    src="assets/images/أعمالنا/8.jpg"
+                    alt=""
+                  />
+                </div>
+              </a>
+              <a href="#" class="swiper-slide">
+                <div class="teacher__image rounded">
+                  <img
+                    class="img-fluid"
+                    src="assets/images/أعمالنا/9.jpg"
+                    alt=""
+                  />
+                </div>
+              </a>
+              <a href="#" class="swiper-slide">
+                <div class="teacher__image rounded">
+                  <img
+                    class="img-fluid"
+                    src="assets/images/أعمالنا/10.jpg"
+                    alt=""
+                  />
+                </div>
+              </a>
+              <a href="#" class="swiper-slide">
+                <div class="teacher__image rounded">
+                  <img
+                    class="img-fluid"
+                    src="assets/images/أعمالنا/11.jpg"
+                    alt=""
+                  />
+                </div>
+              </a>
+              <a href="#" class="swiper-slide">
+                <div class="teacher__image rounded">
+                  <img
+                    class="img-fluid"
+                    src="assets/images/أعمالنا/12.jpg"
+                    alt=""
+                  />
+                </div>
+              </a>
+              <a href="#" class="swiper-slide">
+                <div class="teacher__image rounded">
+                  <img
+                    class="img-fluid"
+                    src="assets/images/أعمالنا/13.jpg"
+                    alt=""
+                  />
+                </div>
+              </a>
+              <a href="#" class="swiper-slide">
+                <div class="teacher__image rounded">
+                  <img
+                    class="img-fluid"
+                    src="assets/images/أعمالنا/14.jpg"
+                    alt=""
+                  />
+                </div>
+              </a>
+              <a href="#" class="swiper-slide">
+                <div class="teacher__image rounded">
+                  <img
+                    class="img-fluid"
+                    src="assets/images/أعمالنا/15.jpg"
+                    alt=""
+                  />
+                </div>
+              </a>
+              <a href="#" class="swiper-slide">
+                <div class="teacher__image rounded">
+                  <img
+                    class="img-fluid"
+                    src="assets/images/أعمالنا/16.jpg"
+                    alt=""
+                  />
+                </div>
+              </a>
+              <a href="#" class="swiper-slide">
+                <div class="teacher__image rounded">
+                  <img
+                    class="img-fluid"
+                    src="assets/images/أعمالنا/17.jpg"
+                    alt=""
+                  />
+                </div>
+              </a>
+              <a href="#" class="swiper-slide">
+                <div class="teacher__image rounded">
+                  <img
+                    class="img-fluid"
+                    src="assets/images/أعمالنا/18.jpg"
+                    alt=""
                   />
                 </div>
               </a>
@@ -534,11 +617,11 @@
                 <div class="service__image rounded">
                   <img
                     class="img-fluid"
-                    src="assets/images/service2.png"
+                    src="assets/images/service1.png"
                     alt=""
                     loading="lazy"
                   />
-                  <h6>تصميم برمجة</h6>
+                  <h6>باقات سوشيال ميديا</h6>
                 </div>
               </a>
 
@@ -550,7 +633,7 @@
                     alt=""
                     loading="lazy"
                   />
-                  <h6>تصميم برمجة</h6>
+                  <h6>تحسين محركات بحث</h6>
                 </div>
               </a>
               <a href="#" class="swiper-slide">
@@ -561,31 +644,56 @@
                     alt=""
                     loading="lazy"
                   />
-                  <h6>تصميم برمجة</h6>
+                  <h6>إدارة حملات إعلانية</h6>
                 </div>
               </a>
               <a href="#" class="swiper-slide">
                 <div class="service__image rounded">
                   <img
                     class="img-fluid"
-                    src="assets/images/service3.png"
+                    src="assets/images/service4.png"
                     alt=""
                     loading="lazy"
                   />
-                  <h6>تصميم برمجة</h6>
+                  <h6>تصميم شعار احترافي</h6>
+                </div>
+              </a>
+
+              <a href="#" class="swiper-slide">
+                <div class="service__image rounded">
+                  <img
+                    class="img-fluid"
+                    src="assets/images/service5.png"
+                    alt=""
+                    loading="lazy"
+                  />
+                  <h6>تصميم فيديو موشن</h6>
+                </div>
+              </a>
+
+              <a href="#" class="swiper-slide">
+                <div class="service__image rounded">
+                  <img
+                    class="img-fluid"
+                    src="assets/images/service6.png"
+                    alt=""
+                    loading="lazy"
+                  />
+                  <h6>تصميم هوية بصرية</h6>
                 </div>
               </a>
             </div>
           </div>
 
           <!-- <div class="swiper-pagination swiper-pagination7"></div> -->
+
+          <!-- Swipper Arrows  -->
+          <div class="swiper-button-next swiper-navBtn"></div>
+          <div class="swiper-button-prev swiper-navBtn"></div>
         </div>
-        <!-- Swipper Arrows  -->
-        <div class="swiper-button-next swiper-navBtn"></div>
-        <div class="swiper-button-prev swiper-navBtn"></div>
 
         <div class="contact_us d-flex justify-content-center mt-3">
-          <a href="https://wa.me/966562484827" class="btn-contact__us">
+          <a href="https://wa.me/966565046134" class="btn-contact__us">
             أنشىء متجرك الان</a
           >
         </div>
@@ -599,43 +707,19 @@
         <div class="swiper p-3 m-2">
           <div class="slide-container swiper1 content text-center">
             <h3>اراء عملاؤنا</h3>
-            <div class="rounded swiper-wrapper">
-              <a href="" class="box swiper-slide">
-                <h3>محمد عبد الله الملحم</h3>
-                <div class="rate">
-                  <i class="filled fas fa-star"></i>
-                  <i class="filled fas fa-star"></i>
-                  <i class="filled fas fa-star"></i>
-                  <i class="filled fas fa-star"></i>
-                  <i class="filled fas fa-star"></i>
-                </div>
+            <div class="swiper-wrapper">
+              <a href="" class="box swiper-slide shadow">
                 <p>
                   والله ما قصرتم كنت اخاف من ان الكثير يقول ان التجارة
                   الالكترونية نصب
                 </p>
               </a>
 
-              <a href="" class="box swiper-slide">
-                <h3>مني الفراج</h3>
-                <div class="rate">
-                  <i class="filled fas fa-star"></i>
-                  <i class="filled fas fa-star"></i>
-                  <i class="filled fas fa-star"></i>
-                  <i class="filled fas fa-star"></i>
-                  <i class="filled fas fa-star"></i>
-                </div>
+              <a href="" class="box swiper-slide shadow">
                 <p>المتجر ممتاز جدا سيتم البدء في خطط التسويق مباشرة صحيح ؟</p>
               </a>
 
-              <a href="" class="box swiper-slide">
-                <h3>محمد علي البراك</h3>
-                <div class="rate">
-                  <i class="filled fas fa-star"></i>
-                  <i class="filled fas fa-star"></i>
-                  <i class="filled fas fa-star"></i>
-                  <i class="filled fas fa-star"></i>
-                  <i class="filled fas fa-star"></i>
-                </div>
+              <a href="" class="box swiper-slide shadow">
                 <p>
                   سعر تصميم المتجر مقارنة بالشركات الأخري ممتاز مع هذه الجودة
                 </p>
@@ -655,7 +739,7 @@
 
     <!-- Start Form Section -->
 
-    <div class="form__section">
+    <div id="contact__us" class="form__section">
       <div class="container">
         <div class="form__wrapper" data-aos="fade-up" data-aos-duration="1000">
           <div class="form__body">
@@ -678,10 +762,10 @@
 
                     <div class="contact_us mt-3">
                       <a
-                        href="https://wa.me/966562484827"
+                        href="https://wa.me/966565046134"
                         class="btn-contact__us"
                       >
-                        ارسل
+                        ارسال
                       </a>
                     </div>
                   </form>
@@ -729,7 +813,7 @@
               </a>
             </li>
             <li>
-              <a href="https://wa.me/966562484827">
+              <a href="https://wa.me/966565046134">
                 <i class="fa-brands fa-whatsapp"></i>
               </a>
             </li>
@@ -762,6 +846,22 @@
     </footer> -->
 
     <footer>
+      <!--  Start Wavy Section  -->
+      <div class="custom-shape-divider-top-1714215092">
+        <svg
+          data-name="Layer 1"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 1200 120"
+          preserveAspectRatio="none"
+        >
+          <path
+            d="M0,0V7.23C0,65.52,268.63,112.77,600,112.77S1200,65.52,1200,7.23V0Z"
+            class="shape-fill"
+          ></path>
+        </svg>
+      </div>
+      <!--  End Wavy Section  -->
+
       <div class="container">
         <div class="footer row">
           <div class="col-12 col-md-4 social__media">
@@ -773,13 +873,13 @@
                 </a>
               </li>
               <li>
-                <a href="https://wa.me/966562484827">
+                <a href="https://wa.me/966565046134">
                   <i class="fa-brands fa-whatsapp"></i>
                 </a>
               </li>
               <li>
                 <a
-                  href="https://www.instagram.com/safqa_agency?igsh=MWVwN2xkdWJlcHg1eg%3D%3D&utm_source=qr "
+                  href="https://www.instagram.com/agencykhatwa?igsh=amFvM212NjFsYnl1"
                 >
                   <i class="fa-brands fa-instagram"></i>
                 </a>
@@ -796,14 +896,15 @@
           <div class="col-12 col-md-4 about-us" id="footer_aboutus">
             <h3>من نحن</h3>
             <p>
-              شركه تسويق سعودية متخصصة في انشاءات المتاجر الإلكترونية وخدمات
-              التسويق، ساعدنا الكثير من المتاجر الإلكترونية في تحقيق مبيعات
-              كبيرة من خلال خطط تسويقية احترافية
+              شركة خطوة الرقمية واحدة من كبرى الشركات السعودية المتخصصة في
+              إنشاءات المتاجر الالكترونية وخدمات التسويق الالكتروني التي تضمن لك
+              ربح عالي نبدأ معك خطوتك الأولي بداية من انشاء المتجر حتي تحقق
+              ارباح من خلال باقات تسويق مربحة
             </p>
           </div>
           <div class="col-12 col-md-4 paltform">
             <a
-              href="https://eauthenticate.saudibusiness.gov.sa/certificate-details/0000060557"
+              href="https://eauthenticate.saudibusiness.gov.sa/certificate-details/"
             >
               <img
                 class="img-fluid"
@@ -828,13 +929,13 @@
           <div
             class="container d-flex justify-content-center justify-content-md-end"
           >
-            <p>رقم السجل التجاري : 4030482116</p>
+            <p>رقم السجل التجاري :</p>
           </div>
         </div>
       </div>
     </footer>
 
-    <a href="https://wa.me/966562484827" class="btn-whatsapp-pulse">
+    <a href="https://wa.me/966565046134" class="btn-whatsapp-pulse">
       <i class="fab fa-whatsapp"></i>
     </a>
 
@@ -846,10 +947,10 @@
     ></script>
 
     <!--===============   AOS   ============== -->
-    <!-- <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
       AOS.init();
-    </script> -->
+    </script>
     <!--=============== MAIN JS ===============-->
     <script src="assets/js/swiper.js"></script>
     <script src="assets/js/main.js"></script>
