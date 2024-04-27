@@ -89,6 +89,42 @@ var swiper = new Swiper(".swiperBrands", {
     },
   },
 });
+var swiper = new Swiper(".swiperPrices", {
+  slidesPerView: 4,
+  spaceBetween: 20,
+  sliderPerGroup: 4,
+  loop: true,
+  centerSlide: "true",
+  grabCursor: "true",
+  autoplay: {
+    delay: 1500,
+    disableOnInteraction: false,
+  },
+
+  breakpoints: {
+    0: {
+      slidesPerView: 1,
+    },
+    350: {
+      slidesPerView: 1,
+    },
+    520: {
+      slidesPerView: 1,
+    },
+    768: {
+      slidesPerView: 1,
+    },
+    1000: {
+      slidesPerView: 2,
+    },
+    1200: {
+      slidesPerView: 4,
+    },
+    1300: {
+      slidesPerView: 4,
+    },
+  },
+});
 
 var swiper = new Swiper(".swiper1", {
   slidesPerView: 6,
