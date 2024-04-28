@@ -99,29 +99,41 @@ var swiper = new Swiper(".swiperPrices", {
   autoplay: {
     delay: 1500,
     disableOnInteraction: false,
+    enabled: false,
   },
 
   breakpoints: {
     0: {
       slidesPerView: 1,
+      enabled: true,
+      delay: 1000,
     },
     350: {
       slidesPerView: 1,
+      enabled: true,
+      delay: 1000,
     },
     520: {
       slidesPerView: 1,
+      enabled: true,
+      delay: 1000,
     },
     768: {
       slidesPerView: 1,
+      enabled: true,
+      delay: 1000,
     },
     1000: {
       slidesPerView: 2,
+      autoplay: false,
     },
     1200: {
       slidesPerView: 4,
+      autoplay: false,
     },
     1300: {
       slidesPerView: 4,
+      autoplay: false,
     },
   },
 });
